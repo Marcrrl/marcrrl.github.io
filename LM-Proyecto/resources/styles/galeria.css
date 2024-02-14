@@ -1,0 +1,19 @@
+section {
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5 ease;
+}
+
+section img:hover {
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
