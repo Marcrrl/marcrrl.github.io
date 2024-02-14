@@ -1,204 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoberTo</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Índice de contenidos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body>
+<body class="container mt-5">
     <header>
-        <form action="#" class="formubusqueda" method="get">
-            <input type="search" class="barrabusqueda" placeholder="Buscar...">
-            <button class="botonbusqueda">
-                <img src="https://icons.veryicon.com/png/o/application/minimalist-icon/search-532.png" alt="busqueda"
-                    class="busqueda">
-            </button>
-        </form>
-    </header>
-    <div class="Todo">
-        <main>
-            <aside>
-                <form name="Registrito">
-                    <label>Nombre:</label>
-                    <input name="Nombre" type="text" required autofocus placeholder="Dirección de correo electrónico">
-                    <label>Contraseña:</label>
-                    <input name="Contraseña" type="password">
-                    <label>Teléfono móvil:</label>
-                    <input type="tel" name="Teléfono" pattern="[0-9]{9}">
-                    <label>Fecha de nacimiento</label>
-                    <input type="date" name="Fecha de nacimiento">
-                    <div>
-                        <input type="checkbox" id="checkContraseña">
-                        <label id="recordar" for="checkContraseña">Recordar Contraseña</label>
+        <div class="row">
+            <div class="col">
+                <div class="h-100 p-5 text-white bg-success border rounded-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="display-3">Marc Ricart López</h2>
                     </div>
-                    <div class="tooltip">
-                        <input type="submit" value="Dar de alta" id="Success">
-                        <span class="tooltipcuadro">Entra y descubre</span>
-                    </div>
-                </form>
-            </aside>
-            <div class="Principal">
-                <nav>
-                    <ul>
-                        <li>Inicio</li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li>Sobre Nosotros</li>
-                        <li>Ayuda</li>
-                    </ul>
-                </nav>
-                <section>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe nisi, sed asperiores quidem
-                        perferendis, aliquam voluptatibus, deleniti minus quod sunt ratione! Quidem veritatis iusto
-                        eveniet minus nulla officiis similique.
-                        Impedit ducimus in consequatur necessitatibus, sequi nemo ea? Veritatis, distinctio voluptas?
-                        Saepe perspiciatis corrupti omnis exercitationem reprehenderit quas, sunt laboriosam similique
-                        quam nobis deserunt pariatur at. Quisquam similique repellat quo!
-                        Libero repellat veniam est distinctio magni non tenetur fugit, nesciunt nulla aut soluta nam
-                        voluptatem sed nisi odit unde quaerat. Totam distinctio voluptatibus autem cupiditate, cumque
-                        maxime rerum iure laboriosam?
-                        In consequatur ratione modi iure. Deserunt sapiente voluptates et dolores reprehenderit. Animi
-                        eveniet quis doloremque exercitationem excepturi sit, consectetur impedit. Delectus pariatur
-                        labore provident natus obcaecati odit maxime! Vel, suscipit.
-                        Provident voluptatum, perferendis in, sequi, nulla distinctio dolor nihil placeat quo inventore
-                        tempore iusto autem a dolorem sit fuga illo dolores aut. Maiores, quasi maxime. Ducimus quisquam
-                        in facilis veniam.
-                        Animi, aliquam delectus! Veniam labore possimus iure rem, non et provident quisquam quod
-                        incidunt quia officia iste eveniet nesciunt, optio officiis consectetur cumque! Fuga qui
-                        laudantium placeat laboriosam, asperiores harum!
-                        Facere minus eveniet maxime, quo accusamus veniam? Ab, aut ut? Sit amet eius provident porro
-                        magni! Eaque eius perspiciatis, a repellat error, itaque inventore veniam mollitia dolor facere
-                        saepe? Consectetur!
-                        Iste quod pariatur voluptate repellat et maxime eaque quas, quo minima facilis? Vero praesentium
-                        harum nesciunt dicta laboriosam voluptatibus doloremque cum et molestiae? Rem consectetur
-                        tempora, accusamus vitae laboriosam autem.
-                        Itaque rem eaque laborum aperiam obcaecati tempore, non saepe incidunt dolorum odit eligendi
-                        nisi animi nemo reiciendis tenetur laudantium officia sapiente, magni recusandae at blanditiis
-                        quod in modi! Consectetur, ipsum.
-                        Et praesentium beatae ullam fuga, dolore illo. Nesciunt praesentium ratione soluta reiciendis
-                        itaque rerum voluptatum, est aperiam at eos odio enim quidem nobis obcaecati optio voluptate
-                        qui, provident odit necessitatibus.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex sit et accusantium fuga
-                        consequatur dolore doloribus cum illo expedita velit delectus in veniam recusandae accusamus
-                        blanditiis, vel eveniet? Quaerat.
-                        Fuga saepe ipsam nulla tempore nemo aut quas voluptatem quaerat quibusdam, corporis vel itaque
-                        sit commodi asperiores deleniti quidem voluptas possimus est reprehenderit! Libero nostrum,
-                        illum odio magni placeat est!
-                        Fugit rerum maxime sint atque? Perferendis rati
-                        Animi, aliquam delectus! Veniam labore possimus iure rem, non et provident quisquam quod
-                        incidunt quia officia iste eveniet nesciunt, optio officiis consectetur cumque! Fuga qui
-                        laudantium placeat laboriosam, asperiores harum!
-                        Facere minus eveniet maxime, quo accusamus veniam? Ab, aut ut? Sit amet eius provident porro
-                        magni! Eaque eius perspiciatis, a repellat error, itaque inventore veniam mollitia dolor facere
-                        saepe? Consectetur!
-                        Iste quod pariatur voluptate repellat et maxime eaque quas, quo minima facilis? Vero praesentium
-                        harum nesciunt dicta laboriosam voluptatibus doloremque cum et molestiae? Rem consectetur
-                        tempora, accusamus vitae laboriosam autem.
-                        Itaque rem eaque laborum aperiam obcaecati tempore, non saepe incidunt dolorum odit eligendi
-                        nisi animi nemo reiciendis tenetur laudantium officia sapiente, magni recusandae at blanditiis
-                        quod in modi! Consectetur, ipsum.
-                        Et praesentium beatae ullam fuga, dolore illo. Nesciunt praesentium ratione soluta reiciendis
-                        itaque rerum voluptatum, est aperiam at eos odio enim quidem nobis obcaecati optio voluptate
-                        qui, provident odit necessitatibus.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex sit et accusantium fuga
-                        consequatur dolore doloribus cum illo expedita velit delectus in veniam recusandae accusamus
-                        blanditiis, vel eveniet? Quaerat.
-                        Fuga saepe ipsam nulla tempore nemo aut quas voluptatem quaerat quibusdam, corporis vel itaque
-                        sit commodi asperiores deleniti quidem voluptas possimus est reprehenderit! Libero nostrum,
-                        illum odio magni placeat est!
-                        Fugit rerum maxime sint atque? Perferendis ratione enim iure similique inventore fugiat modi
-                        mollitia laborum, voluptates placeat a non consequatur doloribus quia iste possimus dolores
-                        sequi fugit accusamus quo veniam.
-                        Ducimus vel amet autem, illo pariatur necessitatibus consequatur atque culpa cum molestiae alias
-                        nisi porro! Dolores distinctio dolorem nihil. Temporibus quas ad neque? Culpa magnam sunt harum?
-                        Facere, ullam aspernatur?
-                        Non officia cum, dolore facilis harum consequuntur quasi neque magnam alias sint numquam sed quo
-                        similique inventore vitae autem asperiores dolores molestiae, facere praesentium repudiandae!
-                        Minima eos nisi expedita ipsum.
-                        Quam aliquam voluptates nemo, ab porro id doloribus temporibus, ipsam eum quidem consequatur
-                        recusandae unde pariatur mollitia velit suscipit deserunt. Natus animi porro facere mollitia sed
-                        possimus reprehenderit neque id?
-                        Fugit fuga voluptatum quaerat, sequi voluptatibus odit quam veniam molestias repellendus
-                        necessitatibus numquam libero cumque consequuntur nesciunt hic voluptatem delectus aspernatur
-                        quidem. Nulla voluptate facere rerum tempora unde assumenda praesentium?
-                        Maxime iure explicabo provident labore reiciendis architecto esse laborum soluta molestias odio
-                        asperiores non similique, dolore magni nostrum nemo atque modi harum expedita unde vel aut.
-                        Enim, libero eveniet! Repudiandae!
-                        Minima animi deserunt est quod esse accusantium. Quibusdam, delectus dolore consequuntur dolorum
-                        omnis, molestias eum dicta repudiandae ullam aliquam dignissimos, cum nesciunt porro. Voluptas
-                        dolorum quam, quo laborum aliquid nesciunt?
-                        Eius quibusdam adipisci omnis velit labore ratione asperiores vero inventore odio! Officia ea
-                        reprehenderit ab tempora impedit doloremque soluta repellat dicta minima error. Quod rem ut
-                        doloremque itaque dignissimos iusto!
-                        Neque delectus eius voluptas debitis vitae commodi dignissimos nam placeat ratione nisi earum
-                        praesentium necessitatibus deleniti ad pariatur, possimus recusandae illo labore blanditiis odio
-                        porro quo facilis. Assumenda, reiciendis placeat.
-                        Nihil eius magnam placeat labore repellendus corrupti maxime, adipisci illum quod inventore
-                        temporibus voluptatibus numquam sapiente cumque possimus praesentium porro, incidunt dicta
-                        neque! Eum error quasi qui ullam quibusdam et?
-                        Alias architecto hic illo earum dolorem eius aspernatur repellendus possimus, repudiandae modi
-                        rem soluta unde ullam sint. Asperiores consectetur obcaecati blanditiis veritatis illum? Aut
-                        perferendis iste perspiciatis. Quisquam, quidem obcaecati.
-                        A fugiat quasi quo voluptas iste eligendi, dolore numquam illum asperiores? Distinctio veniam
-                        repellat delectus expedita at, quod error dolorem voluptatibus eius provident voluptatem
-                        suscipit magnam. Qui ad doloribus ea!
-                        Sequi eveniet temporibus nisi doloribus, sint ad eum aspernatur distinctio? Voluptatum
-                        distinctio earum a quibusdam quod at nostrum suscipit hic maiores. Repellendus qui ab corporis
-                        obcaecati iste officia delectus non?
-                        Alias aperiam voluptatem modi eum? Saepe maxime suscipit earum a facilis iste reprehenderit
-                        vitae assumenda. Corporis magnam natus, esse at eum vero tempore eligendi minus. Ipsum dolores
-                        aperiam dolorem doloribus.
-                        Laudantium accusamus animi numquam aliquam deleniti ratione? Nostrum neque eveniet impedit quis,
-                        aliquid, sequi quibusdam, odio quidem vero enim quod iure blanditiis saepe placeat voluptatibus
-                        nobis error exercitationem? Alias, veritatis?
-                        Delectus ducimus quos voluptatibus aspernatur, nam error inventore libero voluptas repudiandae
-                        magni sapiente dolor cupiditate incidunt id fuga velit non natus soluta officiis molestiae
-                        perspiciatis! Repellendus reiciendis cum suscipit sint?
-                        Ab nulla velit nesciunt incidunt at consequatur amet exercitationem aut, unde dolorum rem iure
-                        voluptatem praesentium quibusdam odio nihil labore temporibus explicabo esse minus! Officiis
-                        similique minus nesciunt dignissimos asperiores?
-                        Neque, consectetur tenetur? Deleniti harum quaerat corporis debitis veritatis. Qui nobis
-                        deserunt rem veritatis blanditiis molestiae. Neque facilis sequi facere ducimus nam, iusto,
-                        nesciunt deserunt suscipit vel corrupti sint labore!
-                        Deserunt, voluptates? Sapiente dolores aliquam tempora adipisci cupiditat
-                        Animi, aliquam delectus! Veniam labore possimus iure rem, non et provident quisquam quod
-                        incidunt quia officia iste eveniet nesciunt, optio officiis consectetur cumque! Fuga qui
-                        laudantium placeat laboriosam, asperiores harum!
-                        Facere minus eveniet maxime, quo accusamus veniam? Ab, aut ut? Sit amet eius provident porro
-                        magni! Eaque eius perspiciatis, a repellat error, itaque inventore veniam mollitia dolor facere
-                        saepe? Consectetur!
-                        Iste quod pariatur voluptate repellat et maxime eaque quas, quo minima facilis? Vero praesentium
-                        harum nesciunt dicta laboriosam voluptatibus doloremque cum et molestiae? Rem consectetur
-                        tempora, accusamus vitae laboriosam autem.
-                        Itaque rem eaque laborum aperiam obcaecati tempore, non saepe incidunt dolorum odit eligendi
-                        nisi animi nemo reiciendis tenetur laudantium officia sapiente, magni recusandae at blanditiis
-                        quod in modi! Consectetur, ipsum.
-                        Et praesentium beatae ullam fuga, dolore illo. Nesciunt praesentium ratione soluta reiciendis
-                        itaque rerum voluptatum, est aperiam at eos odio enim quidem nobis obcaecati optio voluptate
-                        qui, provident odit necessitatibus.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex sit et accusantium fuga
-                        consequatur dolore doloribus cum illo expedita velit delectus in veniam recusandae accusamus
-                        blanditiis, vel eveniet? Quaerat.
-                        Fuga saepe ipsam nulla tempore nemo aut quas voluptatem quaerat quibusdam, corporis vel itaque
-                        sit commodi asperiores deleniti quidem voluptas possimus est reprehenderit! Libero nostrum,
-                        illum odio magni placeat est!
-                        Fugit rerum maxime sint atque? Perferendis ratie quibusdam esse molestias incidunt quae commodi
-                        fugit, natus delectus, suscipit, assumenda culpa nobis voluptates voluptatum. Vitae, eveniet
-                        repudiandae! Cumque, dolores. Porro, consequuntur.
-                        Pariatur, laudantium expedita.</p>
-                </section>
-
+                    <h4>Prácticas y proyectos <sup></sup> 1º DAM-B</h4>
+                </div>
             </div>
-        </main>
-    </div>
-    <footer>
-        <p>Marc Ricart López ©</p>
-    </footer>
+        </div>
+    </header>
+    <main>
+        <div class="row g-0">
+            <!-- Duplicar un bloque para una nueva entrada en el Menú -->
+
+            <!-- Inicio Bloque -->
+            <div class="col-xxl-6">
+                <a href="Practicas1-2/index.html">
+                    <div class="text-start border rounded p-3 shadow btn btn-outline-success w-100">
+                        <div class="h4">Practicas 1 y 2</div>
+                    </div>
+                </a>
+            </div>
+            <!-- Fin Bloque -->
+
+            <div class="col-xxl-6">
+                <a href="https://marcrrl.github.io">
+                    <div class="text-start border rounded p-3 shadow btn btn-outline-success w-100">
+                        <div class="h4">Proyecto LM - MaRoB</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous">  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
