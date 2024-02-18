@@ -46,6 +46,7 @@ header ul {
 header.no-portada {
     background-color: #355b5c;
     height: 15vh;
+    z-index: 1;
 }
 
 @font-face {
@@ -175,6 +176,7 @@ footer.no-portada h4 {
     flex: 1;
     background-image: url(../images/FondoIndex.jpg);
     background-size: 100vw 95vh;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 

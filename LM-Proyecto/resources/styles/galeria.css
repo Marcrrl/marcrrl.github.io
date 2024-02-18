@@ -1,19 +1,103 @@
-section {
+main {
+    margin-bottom: 5vh;
+}
+
+.borde {
+    border: solid 2px black;
+    border-radius: 10px;
+
+}
+
+div.galeria {
+    background-color: rgba(53, 91, 92, 0.85);
+    width: 85vw;
+    min-height: 75vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.foto {
+    cursor: pointer;
+    margin: .5vw;
+    height: fit-content;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.foto img {
+    height: 100%;
+    transition: transform .5s ease-out;
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+.foto .grande {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    height: 75vh;
+}
+
+.foto:focus .grande {
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -43.39%);
+    animation: animacionAparecer ease-out;
+    animation-duration: .3s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.oscuro {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.852);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    justify-content: end;
+    padding-top: 15vh;
+    padding-right: 1vh;
+    font-size: 50px;
+}
+
+.cerrar-oscuro {
+    padding: .3vw;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.foto:focus ~ .oscuro {
     display: flex;
-    width: 600px;
-    height: 430px;
+    animation: animacionAparecer ease-out;
+    animation-duration: .3s;
 }
 
-section img {
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 0.8;
-    transition: 0.5 ease;
+
+@media screen and (max-width: 992px) {
+    .foto:focus .grande {
+        height: auto;
+        width: 95vw;
+    }
 }
 
-section img:hover {
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
+@keyframes animacionAparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
