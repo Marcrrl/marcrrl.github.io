@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Band>
+    <NameBand>Nirvana</NameBand>
+    <Awards>GRAMMY</Awards>
+    <Member plays="1">
+        <NameMember>Kurt Cobain</NameMember>
+        <Role>Vocalist</Role>
+        <Joined year="1985"></Joined>
+    </Member>
+    <Instrument Id="1">Vocalist</Instrument>
+</Band>

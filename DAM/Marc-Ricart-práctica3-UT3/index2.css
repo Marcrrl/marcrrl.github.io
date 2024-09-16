@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    flex: 1;
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.oscuro{
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.fila1{
+    padding-bottom: 20px;
+}

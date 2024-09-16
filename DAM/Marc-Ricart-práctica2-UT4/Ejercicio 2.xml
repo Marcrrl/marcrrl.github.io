@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss>
+
+<channel>
+    <title>ELPAIS.com</title>
+    <link>www.foo.es</link>
+    <description>- Sección Tecnología</description>
+    <item>
+        <title>Sony empieza a reabrir...</title>
+        <link>www.foo.es</link>
+        <autor>EL PAÍS</autor>
+        <description>Sony ha empezado...</description>
+        <date>07:54</date>
+    </item>
+    <item>
+        <title>El código detrás del tuit</title>
+        <link>www.foo.es</link>
+        <autor>RAFAEL CLEMENTE</autor>
+        <description>En el reino de...</description>
+        <date>03:47</date>
+    </item>
+    <item>
+        <title>Google maneja el...</title>
+        <link>www.foo.es</link>
+        <autor>ADRIÁN SEGOVIA</autor>
+        <description>Blogger no es una...</description>
+        <date>03:47</date>
+    </item>
+</channel>
+
+</rss>

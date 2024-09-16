@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="peli.css" type="text/css"?>
+<disco>
+    <arriba>
+        
+        <columna>
+            <caratula></caratula>
+        </columna>
+
+        <columna>
+            <descripcion>Artista:</descripcion>
+            <descripcion>Título:</descripcion>
+            <descripcion>Sello:</descripcion>
+            <descripcion>Referencia:</descripcion>
+            <descripcion>Año:</descripcion>
+            <descripcion>País:</descripcion>
+            <descripcion>Formato:</descripcion>
+            <descripcion>Género:</descripcion>
+            <descripcion>Estilo:</descripcion>
+            <descripcion>Observaciones:</descripcion>
+        </columna>
+
+        <columna>
+            <textoDescripcion>ABC (2)</textoDescripcion>
+            <textoDescripcion>The Collection</textoDescripcion>
+            <textoDescripcion>Karussell International</textoDescripcion>
+            <textoDescripcion>555 831-2</textoDescripcion>
+            <textoDescripcion>1996</textoDescripcion>
+            <textoDescripcion>Germany</textoDescripcion>
+            <textoDescripcion>CD - Compilation</textoDescripcion>
+            <textoDescripcion>Funk / Soul, Electronic</textoDescripcion>
+            <textoDescripcion>Funk Disco, Synth Pop</textoDescripcion>
+            <textoDescripcion>Licensed from Mercury Records Ltd (London)</textoDescripcion>
+        </columna>
+        
+    </arriba>
+    <abajo>
+        <cd>CD 1</cd>
+        <cancion>
+            <numero>01</numero>
+            <nombre>Poison Arrow - </nombre>
+            <duracion>[03:23]</duracion>
+        </cancion>
+        <cancion>
+            <numero>02</numero>
+            <nombre>The Look Of Love (Part One) - </nombre>
+            <duracion>[03:29]</duracion>
+        </cancion>
+        <cancion>
+            <numero>03</numero>
+            <nombre>The Night You Murdered Love - </nombre>
+            <duracion>[04:53]</duracion>
+        </cancion>
+        <cancion>
+            <numero>04</numero>
+            <nombre>Tears Are Not Enough - </nombre>
+            <duracion>[03:29]</duracion>
+        </cancion>
+        <cancion>
+            <numero>05</numero>
+            <nombre>Be Near Me - </nombre>
+            <duracion>[03:37]</duracion>
+        </cancion>
+        <cancion>
+            <numero>06</numero>
+            <nombre>I'm In Love With You - </nombre>
+            <duracion>[04:35]</duracion>
+        </cancion>
+        <cancion>
+            <numero>07</numero>
+            <nombre>The Real Thing - </nombre>
+            <duracion>[04:54]</duracion>
+        </cancion>
+        <cancion>
+            <numero>08</numero>
+            <nombre>Love's A Dangerous Lenguage - </nombre>
+            <duracion>[03:40]</duracion>
+        </cancion>
+        <cancion>
+            <numero>09</numero>
+            <nombre>The Greatest Love Of All - </nombre>
+            <duracion>[05:30]</duracion>
+        </cancion>
+        <cancion>
+            <numero>10</numero>
+            <nombre>When Smokey Sings - </nombre>
+            <duracion>[04:18]</duracion>
+        </cancion>
+        <cancion>
+            <numero>11</numero>
+            <nombre>One Better World - </nombre>
+            <duracion>[05:38]</duracion>
+        </cancion>
+        <cancion>
+            <numero>12</numero>
+            <nombre>Vanity Kills - </nombre>
+            <duracion>[03:29]</duracion>
+        </cancion>
+        <cancion>
+            <numero>13</numero>
+            <nombre>Bite The Hand - </nombre>
+            <duracion>[03:07]</duracion>
+        </cancion>
+        <cancion>
+            <numero>14</numero>
+            <nombre>Chicago (Abridged) - </nombre>
+            <duracion>[03:40]</duracion>
+        </cancion>
+        <cancion>
+            <numero>15</numero>
+            <nombre>Minneapolis - </nombre>
+            <duracion>[02:57]</duracion>
+        </cancion>
+        <cancion>
+            <numero>16</numero>
+            <nombre>Think Again - </nombre>
+            <duracion>[03:39]</duracion>
+        </cancion>
+        <cancion>
+            <numero>17</numero>
+            <nombre>Never More Than Now - </nombre>
+            <duracion>[06:03]</duracion>
+        </cancion>
+        <cancion>
+            <numero>18</numero>
+            <nombre>All Of My Heart - </nombre>
+            <duracion>[04:49]</duracion>
+        </cancion>
+    </abajo>
+</disco>
