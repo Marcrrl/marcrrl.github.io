@@ -4,15 +4,23 @@
 
 }
 
+:root{
+    --primario: hsl(18, 20%, 17%);
+    --secundario: hsl(18, 99%, 43%);
+    --blanco: hsl(0, 0%, 100%);
+    --fuente1: "Josefin Sans Medium", sans-serif;
+    --fuente2: "Cormorant", serif;
+}
+
 @font-face {
     font-family: "Josefin Sans Medium";
-    src: url(./fonts/Josefin.ttf);
+    src: url(fonts/JosefinBack.woff2), url(./fonts/Josefin.ttf);
 }
 
 body {
-    font-family: "Josefin Sans Medium", sans-serif;
-    background-color: white;
-    color: #000000;
+    font-family: var(--fuente1);
+    background-color: var(--blanco);
+    color: hsl(0, 0%, 0%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,21 +37,21 @@ main {
 header {
     text-align: center;
     padding: 3% 0;
-    background-color: #332722;
+    background-color: var(--primario);
 }
 
 h1 {
-    color: #DC4101;
+    color: var(--secundario);
     font-size: 4em;
-    font-family: "Cormorant", serif;
+    font-family: var(--fuente2);
 }
 
 h2{
-    font-family: "Cormorant", serif;
+    font-family: var(--fuente2);
 }
 
 nav {
-    background-color: #332722;
+    background-color: var(--primario);
     padding: 1%;
 }
 
@@ -65,13 +73,13 @@ section {
     max-width: 33vw;
     border: 0.5em rgba(0, 0, 0, 0) solid;
     border-radius: 5%;
-    background-color: #332722;
-    box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.75);
+    background-color: var(--primario);
+    box-shadow: 8px 8px 8px 0px hsla(0, 0%, 0%, 0.75);
 }
 
 section h2 {
     font-size: 1.8em;
-    color: #DC4101;
+    color: var(--secundario);
     text-decoration: underline;
     padding: 1vh 0;
 }
@@ -79,21 +87,21 @@ section h2 {
 section p {
     font-size: 1.3em;
     font-weight: 200;
-    color: white;
+    color: var(--blanco);
     margin: 1vh;
 }
 
 footer {
     text-align: center;
-    background-color: #332722;
-    color: #DC4101;
+    background-color: var(--primario);
+    color: var(--secundario);
     padding: 0.5vh;
 }
 
 a {
-    color: #DC4101;
+    color: var(--secundario);
 }
 
 nav ul li :hover {
-    color: white;
+    color: var(--blanco);
 }
