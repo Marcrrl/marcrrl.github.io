@@ -3,7 +3,7 @@ name: Sync Repositories
 on: 
   push:
     branches:
-      - main  # Cambia a la rama que desees monitorear
+      - main 
 
 jobs:
   sync:
@@ -15,7 +15,5 @@ jobs:
 
       - name: Push to secondary repo
         run: |
-          git remote add secondary https://github.com/MarcDIW/Actividades
+          git remote add secondary https://MarcDIW:${{ secrets.SECON_REPO_SYNC }}@github.com/MarcDIW/Actividades.git
           git push --mirror secondary
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
