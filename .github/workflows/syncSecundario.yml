@@ -1,0 +1,21 @@
+name: Sync Repositories
+
+on: 
+  push:
+    branches:
+      - main  # Cambia a la rama que desees monitorear
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Push to secondary repo
+        run: |
+          git remote add secondary https://github.com/MarcDIW/Actividades
+          git push --mirror secondary
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
