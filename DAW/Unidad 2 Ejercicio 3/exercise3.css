@@ -1,0 +1,145 @@
+/* Reset basic styling and set default font size for relative units */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+}
+
+p {
+    color: black
+}
+
+#site-header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 2.5rem 1.25rem;
+    text-align: center;
+    border-bottom: 0.3rem solid #357abd;
+}
+
+.title {
+    font-size: 2.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #e0e4e8;
+}
+
+.nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;    
+}
+
+.nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFD700;
+}
+
+#main-nav .nav-link[href="#contact"] {
+    color: darkred;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    padding: 2rem;    
+}
+
+.section {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    border: 0.0625rem solid #ddd;
+}
+
+.about {
+    background-color: #fffaf0;
+}
+
+#about p:last-child {
+    color: green;
+}
+
+.services {
+    background-color: #f0fff0;
+}
+
+.section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.625rem;
+    color: #333;
+    text-align: center;
+}
+
+.text {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.services li {
+    margin-left: 2rem;
+}
+
+.intro {
+    color: blue;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    border-top: 0.3rem solid #333;
+}
+
+.footer-text {
+    color: lightgray !important;
+}
+
+#mission {
+    color: darkorange;
+}
+
+#experience {
+    color: darkgray;
+}
+
+#offer {
+    color: darkgreen !important;
+}
+
+#contact-info {
+    color: lightgray;
+}

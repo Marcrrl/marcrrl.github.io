@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 200px;
+    grid-template-columns: 1fr 200px 2fr 1fr;
+    height: 100vh;
+    gap: 10px;
+}
+
+.cuadro1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    background-image: url('assets/picture1.jpg');
+    background-size: cover;
+}
+
+.cuadro2 {
+    grid-row: 1 / 3;
+    grid-column: 3;
+    background-image: url('assets/picture2.jpg');
+    background-size: cover;
+}
+
+.cuadro3 {
+    background-image: url('assets/picture3.jpg');
+    background-size: cover;
+}
+
+.cuadro4 {
+    background-image: url('assets/picture4.jpg');
+    background-size: cover;
+}
+
+.cuadro5 {
+    background-image: url('assets/picture5.jpg');
+    background-size: cover;
+}
+
+.cuadro6 {
+    background-image: url('assets/picture6.jpg');
+    background-size: cover;
+}
+
+.cuadro7 {
+    background-image: url('assets/picture7.jpg');
+    background-size: cover;
+}
+
+.cuadro8 {
+    grid-row: 3 / 5;
+    grid-column: 4;
+    background-image: url('assets/picture8.jpg');
+    background-size: cover;
+}
+
+.cuadro9 {
+    grid-row: 4;
+    grid-column: 1 / 3;
+    background-image: url('assets/picture9.jpg');
+    background-size: cover;
+}
+
+.cuadro10 {
+    background-image: url('assets/picture10.jpg');
+    background-size: cover;
+}
