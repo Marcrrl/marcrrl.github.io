@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sinrespeto</title>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/icono.ico">
+    <style>
+        .slot-machine {
+            display: grid;
+            grid-template-columns: repeat(3, 0.2fr);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+            justify-items: center;
+        }
+
+        .reel {
+            width: 18vw;
+            height: 80vh;
+            border: 2px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .reel img {
+            width: 100%;
+            height: 26.6vh;
+            display: block;
+        }
+
+        .reel-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: transform 0.1s;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(resources/Fondo.png); background-size: cover; margin: 0;">
+    <div class="slot-machine">
+        <div class="reel" id="reel1">
+            <div class="reel-inner">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+            </div>
+        </div>
+        <div class="reel" id="reel2">
+            <div class="reel-inner">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+            </div>
+        </div>
+        <div class="reel" id="reel3">
+            <div class="reel-inner">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+                <img id="img1" src="/resources/img1.png" alt="img1">
+                <img id="img2" src="/resources/img2.png" alt="img2">
+                <img id="img3" src="/resources/img3.png" alt="img3">
+                <img id="img4" src="/resources/img4.png" alt="img4">
+                <img id="img5" src="/resources/img5.jpg" alt="img5">
+                <img id="img6" src="/resources/img6.jpg" alt="img6">
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let reelImages = ['', '', ''];
+
+        document.addEventListener('keydown', function (event) {
+            if (event.code === 'Space') {
+                spinReel('reel1', 0);
+                setTimeout(() => spinReel('reel2', 1), 502);
+                setTimeout(() => spinReel('reel3', 2), 1010);
+            }
+        });
+
+        function spinReel(reelId, reelNumber) {
+            const reel = document.getElementById(reelId).querySelector('.reel-inner');
+            const images = reel.getElementsByTagName('img');
+            const totalImages = images.length;
+            const randomPosition = Math.floor(Math.random() * (totalImages - 2));
+            reel.style.transition = 'transform 3s';
+            reel.style.transform = `translateY(-${randomPosition * 100 / totalImages}%)`;
+            setTimeout(() => {
+                const visibleImageId = getVisibleImageId(reelId);
+                reelImages[reelNumber] = visibleImageId;
+                if (reelNumber === 2) {
+                    checkVictory();
+                }
+            }, 3000);
+        }
+
+        function getVisibleImageId(reelId) {
+            const reel = document.getElementById(reelId).querySelector('.reel-inner');
+            const transformValue = reel.style.transform;
+            const translateY = parseFloat(transformValue.match(/-?\d+(\.\d+)?/)[0]);
+            const totalImages = reel.getElementsByTagName('img').length;
+            let imageIndex = Math.round((translateY / 100) * totalImages) % totalImages;
+            if (imageIndex < 0) {
+                imageIndex += totalImages;
+            }
+            return reel.getElementsByTagName('img')[imageIndex].id;
+        }
+
+        function checkVictory() {
+            const reel1 = reelImages[0];
+            const reel2 = reelImages[1];
+            const reel3 = reelImages[2];
+            if (reel1 === reel2 && reel2 === reel3) {
+                alert('¡Victoria!');
+            }
+        }
+    </script>
+</body>
+
+</html>
