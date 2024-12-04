@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Sinrespeto</title>
-    <link rel="shortcut icon" type="image/x-icon" href="resources/icono.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/favicon.ico">
     <style>
+        @font-face {
+            font-family: 'casino';
+            src: url('resources/casino.ttf') format('truetype');
+        }
+
         .slot-machine {
             display: grid;
             grid-template-columns: repeat(3, 0.2fr);
             gap: 10px;
             justify-content: center;
             align-items: center;
-            height: 97vh;
+            height: 85vh;
             justify-items: center;
         }
 
@@ -38,19 +43,31 @@
             width: 100%;
             transition: transform 0.1s;
         }
+
+        .win-image {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+
+        .casino-footer {
+            background-color: #8B0000;
+            font-size: 0.8em;
+            color: #fff;
+            text-align: center;
+            height: 5vh;
+        }
     </style>
 </head>
 
-<body style="background-image: url(resources/Fondo.png); background-size: cover; margin: 0;">
+<body style="background-image: url(resources/fondo.jpg); background-size: cover; margin: 0; height: 100vh; overflow: hidden;">
     <div class="slot-machine">
+        
         <div class="reel" id="reel1">
             <div class="reel-inner">
-                <img id="img1" src="/resources/img1.png" alt="img1">
-                <img id="img2" src="/resources/img2.png" alt="img2">
-                <img id="img3" src="/resources/img3.png" alt="img3">
-                <img id="img4" src="/resources/img4.png" alt="img4">
-                <img id="img5" src="/resources/img5.jpg" alt="img5">
-                <img id="img6" src="/resources/img6.jpg" alt="img6">
                 <img id="img1" src="/resources/img1.png" alt="img1">
                 <img id="img2" src="/resources/img2.png" alt="img2">
                 <img id="img3" src="/resources/img3.png" alt="img3">
@@ -211,12 +228,6 @@
                 <img id="img4" src="/resources/img4.png" alt="img4">
                 <img id="img5" src="/resources/img5.jpg" alt="img5">
                 <img id="img6" src="/resources/img6.jpg" alt="img6">
-                <img id="img1" src="/resources/img1.png" alt="img1">
-                <img id="img2" src="/resources/img2.png" alt="img2">
-                <img id="img3" src="/resources/img3.png" alt="img3">
-                <img id="img4" src="/resources/img4.png" alt="img4">
-                <img id="img5" src="/resources/img5.jpg" alt="img5">
-                <img id="img6" src="/resources/img6.jpg" alt="img6">
             </div>
         </div>
         <div class="reel" id="reel3">
@@ -299,16 +310,17 @@
                 <img id="img4" src="/resources/img4.png" alt="img4">
                 <img id="img5" src="/resources/img5.jpg" alt="img5">
                 <img id="img6" src="/resources/img6.jpg" alt="img6">
-                <img id="img1" src="/resources/img1.png" alt="img1">
-                <img id="img2" src="/resources/img2.png" alt="img2">
-                <img id="img3" src="/resources/img3.png" alt="img3">
-                <img id="img4" src="/resources/img4.png" alt="img4">
-                <img id="img5" src="/resources/img5.jpg" alt="img5">
-                <img id="img6" src="/resources/img6.jpg" alt="img6">
             </div>
         </div>
-
     </div>
+    <div
+        style="display: flex; align-items: center; justify-content: center; color: black; font-size: 2rem; height: 10vh;">
+        <h2 style="font-family: 'casino'; font-weight: 100;  margin: 0;">Pulsa Espacio para empezar a ganar</h2>
+    </div>
+    <img src="resources/slotswin.gif" alt="Victoria" class="win-image" id="winImage">
+    <footer class="casino-footer" style="height: 5vh;">
+        <p>&copy; 2024 IESDoctorGambling. Gambling Presente, Balmis Ausente.</p>
+    </footer>
     <script>
         let reelImages = ['', '', ''];
 
@@ -317,8 +329,16 @@
                 spinReel('reel1', 0);
                 setTimeout(() => spinReel('reel2', 1), 502);
                 setTimeout(() => spinReel('reel3', 2), 1010);
+                resetVideo();
             }
         });
+
+        function resetVideo() {
+            const video = document.getElementById('winVideo');
+            video.style.display = 'none';
+            video.pause();
+            video.currentTime = 0;
+        }
 
         function spinReel(reelId, reelNumber) {
             const reel = document.getElementById(reelId).querySelector('.reel-inner');
@@ -353,7 +373,7 @@
             const reel2 = reelImages[1];
             const reel3 = reelImages[2];
             if (reel1 === reel2 && reel2 === reel3) {
-                alert('¡Victoria!');
+                document.getElementById('winImage').style.display = 'block';
             }
         }
     </script>
