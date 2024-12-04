@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Sinrespeto</title>
+    <title>La Tres Carriles</title>
     <link rel="shortcut icon" type="image/x-icon" href="resources/favicon.ico">
     <style>
         @font-face {
@@ -51,6 +51,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1000;
+            width: 50vw; 
+            height: 50vh;
         }
 
         .casino-footer {
@@ -326,18 +328,16 @@
 
         document.addEventListener('keydown', function (event) {
             if (event.code === 'Space') {
+                resetVideo();
                 spinReel('reel1', 0);
                 setTimeout(() => spinReel('reel2', 1), 502);
                 setTimeout(() => spinReel('reel3', 2), 1010);
-                resetVideo();
             }
         });
 
         function resetVideo() {
             const video = document.getElementById('winVideo');
-            video.style.display = 'none';
-            video.pause();
-            video.currentTime = 0;
+            document.getElementById('winImage').style.display = 'none';
         }
 
         function spinReel(reelId, reelNumber) {
