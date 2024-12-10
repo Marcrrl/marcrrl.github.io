@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Giratoria</title>
+</head>
+
+<body
+    style="background-image: url(resources/fondo.jpg); background-repeat: no-repeat; background-size: cover; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+    <div id="result"
+        style="position: absolute; top: 50%; left: 10%; transform: translateY(-50%); font-size: 100px; font-family: Helvetica; font-weight: bold; color: gold;">
+    </div>
+    <div style="display: flex; align-items: center;">
+        <canvas id="canvas" width="700" height="700"></canvas>
+    </div>
+    <table style="margin-top: 20px; border-collapse: collapse;">
+        <tr>
+            <td rowspan="3"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; border-radius: 20px 0 0 20px; text-align: center; background-color: green;">
+                0</td>
+            <td id="num-3"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                3</td>
+            <td id="num-6"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                6</td>
+            <td id="num-9"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                9</td>
+            <td id="num-12"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                12</td>
+            <td id="num-15"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                15</td>
+            <td id="num-18"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                18</td>
+            <td id="num-21"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                21</td>
+            <td id="num-24"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                24</td>
+            <td id="num-27"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                27</td>
+            <td id="num-30"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                30</td>
+            <td id="num-33"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                33</td>
+            <td id="num-36"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                36</td>
+            <td rowspan="1"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; border-radius: 0 20px 0 0; text-align: center; background-color: green;">
+                2 in 1</td>
+        </tr>
+        <tr>
+            <td id="num-2"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                2</td>
+            <td id="num-5"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                5</td>
+            <td id="num-8"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                8</td>
+            <td id="num-11"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                11</td>
+            <td id="num-14"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                14</td>
+            <td id="num-17"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                17</td>
+            <td id="num-20"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                20</td>
+            <td id="num-23"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                23</td>
+            <td id="num-26"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                26</td>
+            <td id="num-29"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                29</td>
+            <td id="num-32"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                32</td>
+            <td id="num-35"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                35</td>
+            <td rowspan="1"
+                style="padding: 10px; color: white; border: 2px solid black; font-family: Arial; font-weight: bold; text-align: center; background-color: green;">
+                2 in 1</td>
+
+        </tr>
+        <tr>
+            <td id="num-1"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                1</td>
+            <td id="num-4"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                4</td>
+            <td id="num-7"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                7</td>
+            <td id="num-10"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                10</td>
+            <td id="num-13"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                13</td>
+            <td id="num-16"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                16</td>
+            <td id="num-19"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                19</td>
+            <td id="num-22"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                22</td>
+            <td id="num-25"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                25</td>
+            <td id="num-28"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                28</td>
+            <td id="num-31"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: black;">
+                31</td>
+            <td id="num-34"
+                style="padding: 10px; border: 1px solid black; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: red;">
+                34</td>
+            <td rowspan="1"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; border-radius: 0 0 20px 0; text-align: center; background-color: green;">
+                2 in 1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="4"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: green; border:1px solid black;">
+                1-12</td>
+            <td colspan="4"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: green; border:1px solid black;">
+                13-24</td>
+            <td colspan="4"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: green; border:1px solid black;">
+                25-36</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: green; border:1px solid black;">
+                1 to 18</td>
+            <td colspan="2"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: green; border:1px solid black;">
+                even</td>
+            <td colspan="2"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: green; border:1px solid black;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div id="triangulo"
+                        style="width: 0px; height: 0px; border-bottom: 20px solid red; border-left: 10px solid transparent; border-right: 10px solid transparent; transform: rotate(270deg);">
+                    </div>
+                    <div id="triangulo"
+                        style="width: 0px; height: 0px; border-bottom: 20px solid red; border-left: 10px solid transparent; border-right: 10px solid transparent; transform: rotate(90deg);">
+                    </div>
+                </div>
+            </td>
+            <td colspan="2"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; background-color: green; border:1px solid black;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div id="triangulo"
+                        style="width: 0px; height: 0px; border-bottom: 20px solid black; border-left: 10px solid transparent; border-right: 10px solid transparent; transform: rotate(270deg);">
+                    </div>
+                    <div id="triangulo"
+                        style="width: 0px; height: 0px; border-bottom: 20px solid black; border-left: 10px solid transparent; border-right: 10px solid transparent; transform: rotate(90deg);">
+                    </div>
+                </div>
+            </td>
+
+            <td colspan="2"
+                style="background-color: green; border: 1px black solid; text-align: center; font-family: Arial; font-weight: bold; color: white;">
+                ODD</td>
+
+            <td colspan="2"
+                style="padding: 10px; color: white; font-family: Arial; font-weight: bold; text-align: center; background-color: green; border:1px solid black;">
+                19 to 36</td>
+        </tr>
+    </table>
+
+
+    </div>
+    <script>
+        var options = ["0", "32", "15", "19", "4", "21", "2", "25", "17", "34", "6", "27", "13", "36", "11", "30", "8", "23", "10", "5", "24", "16", "33", "1", "20", "14", "31", "9", "22", "18", "29", "7", "28", "12", "35", "3", "26"];
+
+        var startAngle = 4.625;
+        var arc = Math.PI / (options.length / 2);
+        var spinTimeout = null;
+
+        var spinArcStart = 10;
+        var spinTime = 0;
+        var spinTimeTotal = 0;
+
+        var ctx;
+
+        var img = new Image();
+        img.src = 'resources/rule.png';
+        img.style.border = "1px solid black";
+
+        document.addEventListener("keydown", function (event) {
+            if (event.code === "Space") {
+                spin();
+            }
+        });
+
+        function byte2Hex(n) {
+            var nybHexString = "0123456789ABCDEF";
+            return String(nybHexString.substr((n >> 4) & 0x0F, 1)) + nybHexString.substr(n & 0x0F, 1);
+        }
+
+        function RGB2Color(r, g, b) {
+            return '#' + byte2Hex(r) + byte2Hex(r) + byte2Hex(b);
+        }
+
+        function getColor(item, maxitem) {
+            if (item === 0) {
+                return '#00FF00';
+            }
+            if (item % 2 === 0) {
+                return '#000000';
+            } else {
+                return '#FF0000';
+            }
+        }
+
+        function drawRouletteWheel() {
+            var canvas = document.getElementById("canvas");
+            if (canvas.getContext) {
+                var outsideRadius = 300
+                var textRadius = 250;
+                var insideRadius = 100;
+
+                ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, 700, 700);
+
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 10;
+
+                ctx.font = 'bold 26px Helvetica, Arial';
+
+                for (var i = 0; i < options.length; i++) {
+                    var angle = startAngle + i * arc;
+                    ctx.fillStyle = getColor(i, options.length);
+
+                    ctx.beginPath();
+                    ctx.arc(350, 350, outsideRadius, angle, angle + arc, false);
+                    ctx.arc(350, 350, insideRadius, angle + arc, angle, true);
+                    ctx.stroke();
+                    ctx.fill();
+
+                    ctx.save();
+                    ctx.shadowOffsetX = -1;
+                    ctx.shadowOffsetY = -1;
+                    ctx.shadowBlur = 0;
+                    ctx.shadowColor = "#000000";
+                    ctx.fillStyle = "white";
+                    ctx.translate(350 + Math.cos(angle + arc / 2) * textRadius,
+                        350 + Math.sin(angle + arc / 2) * textRadius);
+                    ctx.rotate(angle + arc / 2 + Math.PI / 2);
+                    var text = options[i];
+                    ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+                    ctx.restore();
+                }
+
+                ctx.save();
+                ctx.translate(350, 350);
+                ctx.rotate(startAngle);
+                ctx.drawImage(img, -insideRadius, -insideRadius, insideRadius * 2, insideRadius * 2);
+                ctx.restore();
+
+                ctx.fillStyle = "gold";
+                ctx.beginPath();
+                ctx.moveTo(350 - 4, 350 - (outsideRadius + 5));
+                ctx.lineTo(350 + 4, 350 - (outsideRadius + 5));
+                ctx.lineTo(350 + 4, 350 - (outsideRadius - 5));
+                ctx.lineTo(350 + 9, 350 - (outsideRadius - 5));
+                ctx.lineTo(350 + 0, 350 - (outsideRadius - 13));
+                ctx.lineTo(350 - 9, 350 - (outsideRadius - 5));
+                ctx.lineTo(350 - 4, 350 - (outsideRadius - 5));
+                ctx.lineTo(350 - 4, 350 - (outsideRadius + 5));
+                ctx.fill();
+            }
+        }
+
+        function spin() {
+            spinAngleStart = Math.random() * 10 + 10;
+            spinTime = 0;
+            spinTimeTotal = Math.random() * 3 + 4 * 1000;
+            rotateWheel();
+        }
+
+        function rotateWheel() {
+            spinTime += 20;
+            if (spinTime >= spinTimeTotal) {
+                stopRotateWheel();
+                return;
+            }
+            var spinAngle = spinAngleStart - easeOut(spinTime, 0, spinAngleStart, spinTimeTotal);
+            startAngle += (spinAngle * Math.PI / 180);
+            drawRouletteWheel();
+            spinTimeout = setTimeout('rotateWheel()', 30);
+        }
+
+        function highlightNumber(number) {
+            const previousHighlighted = document.querySelector('.highlighted');
+            if (previousHighlighted) {
+                previousHighlighted.style.color = 'white';
+                previousHighlighted.style.backgroundColor = previousHighlighted.dataset.originalColor;
+                previousHighlighted.classList.remove('highlighted');
+            }
+            const cell = document.getElementById(`num-${number}`);
+            if (cell) {
+                cell.dataset.originalColor = cell.style.backgroundColor;
+                cell.style.color = 'black';
+                cell.style.backgroundColor = 'gold';
+                cell.classList.add('highlighted');
+            } else if (number === "0") {
+                const zeroCell = document.querySelector('td[style*="background-color: green;"]');
+                if (zeroCell) {
+                    zeroCell.dataset.originalColor = zeroCell.style.backgroundColor;
+                    zeroCell.style.color = 'black';
+                    zeroCell.style.backgroundColor = 'gold';
+                    zeroCell.classList.add('highlighted');
+                }
+            }
+        }
+
+        function stopRotateWheel() {
+            clearTimeout(spinTimeout);
+            var degrees = startAngle * 180 / Math.PI + 90;
+            var arcd = arc * 180 / Math.PI;
+            var index = Math.floor((360 - degrees % 360) / arcd);
+            ctx.save();
+            var text = options[index];
+            ctx.restore();
+
+            document.getElementById("result").innerText = text;
+
+            highlightNumber(text);
+        }
+
+        function easeOut(t, b, c, d) {
+            var ts = (t /= d) * t;
+            var tc = ts * t;
+            return b + c * (tc + -3 * ts + 3 * t);
+        }
+
+        drawRouletteWheel();
+    </script>
+</body>
+
+</html>
