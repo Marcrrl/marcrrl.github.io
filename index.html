@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HAPPY BDAY MERY</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>FELIZ CUMPLEAÑOS <b><u>BONITA</u></b></h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Introduce una palabra o código</h2>
+            <form class="input-form" onsubmit="return false;">
+                <label for="userInput" class="sr-only">Entrada de texto</label>
+                <input id="userInput" name="userInput" type="text" maxlength="30" placeholder=". . ."
+                    autocomplete="off" />
+            </form>
+        </section>
+
+        <section class="prize-section" aria-label="Ventanas de premios">
+            <div class="prize-grid" id="prizeGrid" role="list">
+                <div class="window" data-index="0" role="listitem" aria-hidden="false">
+                    <div class="cover" aria-hidden="true"></div>
+                    <div class="prize" aria-hidden="true"></div>
+                </div>
+                <div class="window" data-index="1" role="listitem" aria-hidden="false">
+                    <div class="cover" aria-hidden="true"></div>
+                    <div class="prize" aria-hidden="true"></div>
+                </div>
+                <div class="window" data-index="2" role="listitem" aria-hidden="false">
+                    <div class="cover" aria-hidden="true"></div>
+                    <div class="prize" aria-hidden="true"></div>
+                </div>
+                <div class="window" data-index="3" role="listitem" aria-hidden="false">
+                    <div class="cover" aria-hidden="true"></div>
+                    <div class="prize" aria-hidden="true"></div>
+                </div>
+                <div class="window" data-index="4" role="listitem" aria-hidden="false">
+                    <div class="cover" aria-hidden="true"></div>
+                    <div class="prize" aria-hidden="true"></div>
+                </div>
+                <div class="window" data-index="5" role="listitem" aria-hidden="false">
+                    <div class="cover" aria-hidden="true"></div>
+                    <div class="prize" aria-hidden="true"></div>
+                </div>
+            </div>
+            <p class="hint">Escribe cosas cuando tengas una pista, no vale probar a ciegas -..- .</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Marcrrl.</p>
+    </footer>
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>
